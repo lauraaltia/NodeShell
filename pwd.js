@@ -1,7 +1,5 @@
 module.exports = function () {
-  if(cmd === 'pwd'){
-    process.stdout.write(process.cwd());
-  }
-
-  process.stdout.write('\nprompt > ');
+  const currentWorkingDirectory = process.cwd()
+  process.stdout.write(currentWorkingDirectory);
+  process.stdout.write('\n > ');
 };
